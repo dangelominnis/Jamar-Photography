@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legacy Pool Designs is a pool company that specializes in custom pools in League City, and surrounding areas.">
+    <meta name="keywords" content="Swimming Pool, Hot Tub Service, League City, Texas, Decks, Patio Builder, Pool Renovations">
+    <meta name="author" content="Legacy Pool Designs">
+    <title>J Booker | Photography</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Pricing Header Section -->
+    <header class="pricing-header">
+        <div class="container">
+            <!-- <div class="pricing-header-box">
+                <h1>Perfection</h1>
+            </div> -->
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/jb-photography-logo-01.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">drag_indicator</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link" href="gallery.html">Gallery</a>
+                <a class="nav__link" href="pricing.html">Pricing</a>
+                <!-- <a href="#" class="btn-primary">Contact</a> -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1.5)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".about-header"));
+        });
+        </script>
+
+<!-- About Section -->
+<section class="about">
+    <div class="container">
+        <div class="about-box">
+            <h3>Pricing Information</h3>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem saepe deleniti, cupiditate accusantium velit quod voluptas. Aspernatur necessitatibus provident repudiandae nisi nesciunt, labore dolor expedita quod dignissimos quidem iusto tenetur.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing">
+    <div class="container">
+        <div class="pricing-box">
+            <div class="pricing-item">
+                <h3>Session I</h3>
+                <h5>$125.00</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea doloribus animi.</p>
+            </div>
+            <div class="pricing-item">
+                <h3>Session II</h3>
+                <h5>$300.00</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea doloribus animi.</p>
+            </div>
+            <div class="pricing-item">
+                <h3>Session III</h3>
+                <h5>$425.00</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea doloribus animi.</p>
+            </div>
+            <div class="pricing-item">
+                <h3>Basic Editing</h3>
+                <h5>$35.00</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea doloribus animi.</p>
+            </div>
+            <div class="pricing-item">
+                <h3>Premium Shoot</h3>
+                <h5>$600.00</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea doloribus animi.</p>
+            </div>
+            <div class="pricing-item">
+                <h3>Session Add-Ons</h3>
+                <h5>$10-$65</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea doloribus animi.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer">
+    <div class="container">
+        <div class="footer-box">
+        <div class="footer-contact">
+            <!-- Contact Box -->
+            <div class="contact-box">
+                <h3>Contact Me</h3>
+                <form action="">
+                    <div class="contact-item">
+                        <h5>Name*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Phone Number*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Email*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Message*</h5>
+                        <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="contact-submit">
+                        <div class="contact-button">
+                            <a href="#">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-map">
+            <h3>Site Map</h3>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="pricing.html"><li>Pricing</li></a>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h3>Contact Info</h3>
+            <a href="tel:832-546-8080"><li>(832) 546 - 8080</li></a>
+            <a href="mailto:legacypooldesigns@gmail.com"><li>jamarbooker@gmail.com</li></a>
+            <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            <a href="#"><li>Copyright @ 2021. All rights reserved by Jay Booker.</li></a>
+            <div class="footer-socials">
+                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                <a href=""><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Legacy Pool Designs is a pool company that specializes in custom pools in League City, and surrounding areas.">
+    <meta name="keywords" content="Swimming Pool, Hot Tub Service, League City, Texas, Decks, Patio Builder, Pool Renovations">
+    <meta name="author" content="Legacy Pool Designs">
+    <title>J Booker | Photography</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Google Material Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b1974bca5b.js" crossorigin="anonymous"></script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- About Header Section -->
+    <header class="about-header">
+        <div class="container">
+            <!-- <div class="about-header-box">
+                <h1>Perfection</h1>
+            </div> -->
+        </div>
+    </header>
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <img class="bar__logo" src="img/jb-photography-logo-01.png" alt="logo image">
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="material-icons">drag_indicator</i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link" href="gallery.html">Gallery</a>
+                <a class="nav__link" href="pricing.html">Pricing</a>
+                <!-- <a href="#" class="btn-primary">Contact</a> -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header Javascript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver(entries => {
+                document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1.5)
+            }, {
+                threshold: 0.9
+            });
+            
+            observer.observe(document.querySelector(".about-header"));
+        });
+        </script>
+
+<!-- About Section -->
+<section class="about">
+    <div class="container">
+        <div class="about-box">
+            <h3>About The Photographer</h3>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet laudantium laborum?</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem saepe deleniti, cupiditate accusantium velit quod voluptas. Aspernatur necessitatibus provident repudiandae nisi nesciunt, labore dolor expedita quod dignissimos quidem iusto tenetur ea impedit sit consequatur nostrum quae laboriosam dolores cupiditate cum pariatur, hic cumque! Recusandae esse totam consequuntur quia eos? Provident.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Exhibit Section -->
+<section class="exhibit">
+    <div class="container">
+        <div class="exhibit-container">
+            <div class="exhibit-box1">
+                <img src="img/Dallas-24.jpg" alt="">
+            </div>
+            <div class="exhibit-box2">
+                <div class="exhibit-item">
+                    <img src="img/Dallas-51.jpg" alt="">
+                </div>
+                <div class="exhibit-item">
+                    <img src="img/Dallas-48.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Highlight Section -->
+<section class="highlight">
+    <div class="container">
+        <div class="highlight-box">
+            <div class="highlight-header">
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquid ad qui iste excepturi illum soluta assumenda nobis, fugiat laboriosam, tempore magni molestiae, enim sit natus ex. Nam, ea incidunt.</h5>
+            </div>
+            <div class="highlight-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis doloremque repellat accusamus natus hic vitae ullam nihil, velit asperiores inventore ipsam quo? Distinctio laborum facilis natus recusandae magni totam cum, perspiciatis ut voluptatem, nostrum, aspernatur molestias explicabo porro reiciendis est vel eos quae? Est quam quisquam quia tempore amet blanditiis nesciunt reiciendis, placeat beatae, explicabo enim esse excepturi officiis, totam odio pariatur voluptate. Maiores optio quas eius adipisci harum.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature-2 Section -->
+<section class="feature-2">
+    <div class="container">
+        
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer">
+    <div class="container">
+        <div class="footer-box">
+        <div class="footer-contact">
+            <!-- Contact Box -->
+            <div class="contact-box">
+                <h3>Contact Me</h3>
+                <form action="">
+                    <div class="contact-item">
+                        <h5>Name*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Phone Number*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Email*</h5>
+                        <input type="text" name="First Name" id="" class="input" required>
+                    </div>
+                    <div class="contact-item">
+                        <h5>Message*</h5>
+                        <textarea name="Message" id="" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div class="contact-submit">
+                        <div class="contact-button">
+                            <a href="#">Submit</a>
+                        </div>
+                        <!-- <input type="submit" value="" class="btn-primary"> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer-map">
+            <h3>Site Map</h3>
+            <ul>
+                <a href="index.html"><li>Home</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="gallery.html"><li>Gallery</li></a>
+                <a href="pricing.html"><li>Pricing</li></a>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <h3>Contact Info</h3>
+            <a href="tel:832-546-8080"><li>(832) 546 - 8080</li></a>
+            <a href="mailto:legacypooldesigns@gmail.com"><li>jamarbooker@gmail.com</li></a>
+            <a href="https://logo-genius.com/"><li>Developed By Logo Genius</li></a>
+            <a href="#"><li>Copyright @ 2021. All rights reserved by Jay Booker.</li></a>
+            <div class="footer-socials">
+                <a href="#"><li><i class="fab fa-instagram"></i></li></a>
+                <a href=""><li><i class="fab fa-facebook-f"></i></li></a>
+                <a href="#"><li><i class="fab fa-twitter"></i></li></a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>
