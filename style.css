@@ -373,6 +373,11 @@ span {
     justify-content: space-between;
 }
 
+.showcase-list p span {
+    font-weight: 900;
+    color: var(--color-white);
+}
+
 .showcase-bullet-1 {
     display: flex;
     flex-direction: column;
@@ -631,6 +636,98 @@ span {
 }
 
 .about-box p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    font-weight: 300;
+    color: var(--color-black);
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+}
+
+/* Portraits Section */
+.portraits {
+    padding: 6rem 0 2rem 0;
+    background-color: var(--color-white);
+}
+
+.portraits-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20rem;
+}
+
+.portraits-box h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--color-black);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -.5rem;
+}
+
+.portraits-box h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-black);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.portraits-box p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    font-weight: 300;
+    color: var(--color-black);
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+}
+
+/* Weddings Section */
+.weddings {
+    padding: 0rem 0 2rem 0;
+    background-color: var(--color-white);
+}
+
+.weddings-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20rem;
+}
+
+.weddings-box h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    color: var(--color-black);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -.5rem;
+}
+
+.weddings-box h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--color-black);
+    letter-spacing: 1px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.weddings-box p {
     font-family: 'Open Sans', sans-serif;
     font-size: .75rem;
     font-weight: 300;
@@ -1328,6 +1425,16 @@ span {
         margin: 0 16rem;
     }
 
+    /* Portraits Section */
+    .portraits-box {
+        margin: 0 16rem;
+    }
+
+    /* Weddings Section */
+    .weddings-box {
+        margin: 0 16rem;
+    }
+
     /* Showcase Section */
     .showcase-info-box {
         display: flex;
@@ -1358,6 +1465,16 @@ span {
     
     /* About Section */
     .about-box {
+        margin: 0 8rem;
+    }
+
+    /* Portraits Section */
+    .portraits-box {
+        margin: 0 8rem;
+    }
+
+    /* Weddings Section */
+    .weddings-box {
         margin: 0 8rem;
     }
 
@@ -1435,9 +1552,52 @@ span {
         margin: 0 2rem;
     }
 
+    /* Showcase Section */
+    .showcase-box {
+        margin: 0rem;
+    }
+
+    .showcase-textbox {
+        flex-direction: column;
+    }
+
+    .showcase-heading {
+        margin-bottom: 2rem;
+    }
+
+    .showcase-title p {
+        margin-bottom: 2rem;
+    }
+
+    .showcase-image-box {
+        margin: 0rem;
+    }
+
+    .showcase-item {
+        margin: 0rem 0 6rem 0;
+    }
+
     /* About Section */
     .about-box {
         margin: 0 3rem;
+    }
+
+    /* Portraits Section */
+    .portraits-box {
+        margin: 0 3rem;
+    }
+
+    .portraits h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Weddings Section */
+    .weddings-box {
+        margin: 0 3rem;
+    }
+
+    .weddings h3 {
+        font-size: 1.25rem;
     }
 
     /* Pricing Section */
