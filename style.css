@@ -231,7 +231,7 @@ span {
     height: auto;
     /* height: calc(100vh - var(--bar-height)); */
     padding: 32px;
-    background: var(--color-third);
+    background: var(--color-light-grey);
     box-sizing: border-box;
 }
 
@@ -239,8 +239,8 @@ span {
     font-size: .75rem;
     font-weight: 600;
     letter-spacing: .9px;
-    color: var(--color-white);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: var(--color-black);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     text-decoration: none;
     text-transform: uppercase;
     padding: 1rem 0;
@@ -1441,6 +1441,20 @@ span {
         align-content: flex-end;
     }
 
+    .showcase-image-box {
+        justify-content: center;
+    }
+    
+    .showcase-image-box img {
+        width: 15rem;
+        height: auto;
+    }
+
+    .showcase-item {
+        margin: 0 2rem;
+    }
+
+
     /* Highlight Section */
     .highlight-box {
         flex-direction: column;
@@ -1478,17 +1492,26 @@ span {
         margin: 0 8rem;
     }
 
+    /* Exhibit Section */
+    .exhibit {
+        padding: 6rem 0 1rem 0;
+    }
+
     /* Highlight Section */
     .highlight {
-        padding: 2rem 0 8rem 0;
+        padding: 0rem 0 6rem 0;
     }
     .highlight-box {
-        margin: 0 4rem;
+        margin: 0 2rem;
     }
 
     /* Showcase Section */
+    .showcase {
+        padding: 6rem 0 0rem 0;
+    }
+
     .showcase-image-box {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .showcase-item {
@@ -1496,13 +1519,21 @@ span {
     }
 
     .showcase-box img {
-        width: auto;
-        height: 500px;
+        width: 30rem;
+        height: auto;
     }
 
     /* Models Section */
     .models-box {
-        margin: 0 4rem;
+        margin: 0 2rem;
+    }
+
+    .models-item {
+        margin-bottom: 2rem;
+    }
+
+    .models h5 {
+        margin-bottom: 1rem;
     }
 
     /* Exhibit Section */
@@ -1548,11 +1579,27 @@ span {
     }
 
     /* Intro Section */
+    .intro {
+        padding: 4rem 0 2rem 0;
+    }
+
     .intro-box {
         margin: 0 2rem;
     }
 
+    .intro-box h3 {
+        text-align: left;
+    }
+
+    .intro-box h5 {
+        text-align: left;
+    }
+
     /* Showcase Section */
+    .showcase {
+        padding: 4rem 0rem 2rem 0rem;
+    }
+
     .showcase-box {
         margin: 0rem;
     }
@@ -1570,21 +1617,79 @@ span {
     }
 
     .showcase-image-box {
-        margin: 0rem;
+        flex-direction: column;
     }
 
     .showcase-item {
-        margin: 0rem 0 6rem 0;
+        margin: 0 0;
+    }
+
+    .showcase-item img {
+        margin-bottom: 4rem;
+        width: 16rem;
+        height: auto;
+    }
+
+    .showcase-image {
+        margin: 4rem 2rem 5rem 2rem;
+    }
+
+    .showcase-image img {
+        width: 16rem;
+    }
+
+    /* Exhibit Section */
+    .exhibit {
+        padding: 4rem 0 0rem 0;
     }
 
     /* About Section */
+    .about {
+        padding: 4rem 0 0rem 0;
+    }
+
     .about-box {
-        margin: 0 3rem;
+        margin: 0 2rem;
+    }
+
+    .about-box h3 {
+        text-align: left;
+        margin-right: 4rem;
+    }
+
+    .about-box h5 {
+        text-align: left;
+    }
+
+    .about-box p {
+        text-align: left;
+    }
+
+    /* highlight Section */
+    .highlight {
+        padding: 0rem 0 4rem 0;
+    }
+
+    .highlight-box {
+        margin: 0 0rem;
+    }
+
+    .highlight-box h3 {
+        text-align: left;
+        margin-right: 4rem;
+    }
+
+    .highlight-box h5 {
+        text-align: left;
+    }
+
+    .highlight-box p {
+        text-align: left;
     }
 
     /* Portraits Section */
     .portraits-box {
-        margin: 0 3rem;
+        margin: 0 2rem;
     }
 
     .portraits h3 {
@@ -1593,7 +1698,7 @@ span {
 
     /* Weddings Section */
     .weddings-box {
-        margin: 0 3rem;
+        margin: 0 2rem;
     }
 
     .weddings h3 {
@@ -1606,17 +1711,16 @@ span {
     }
 
     /* Models Section */
+    .models {
+        padding: 4rem 0 0rem 0;
+    }
+
     .models-box {
         margin: 0 2rem;
     }
 
     .models-reviews {
         flex-direction: column;
-    }
-
-    /* Highlight Section */
-    .highlight-box {
-        margin: 0 1rem;
     }
 
     /* Footer Section */
