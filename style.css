@@ -255,7 +255,8 @@ span {
 }
 
 /* @media screen and (min-width: 767px) */
-@media screen and (min-width: 1800px) {
+/* @media screen and (min-width: 1800px) */
+@media screen and (min-width: 3072px) {
     .bar__nav-toggle {
         display: none;
     }
