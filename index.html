@@ -157,7 +157,7 @@
             <!-- Contact Box -->
             <div class="contact-box" id="contact">
                 <h3>Contact Me</h3>
-                <form action="">
+                <form name="contact" method="POST" data-netlify="true"><input type="hidden" name="form-name" value="contact">
                     <div class="contact-item">
                         <h5>Name*</h5>
                         <input type="text" name="First Name" id="" class="input" placeholder="Name" required>
@@ -176,9 +176,8 @@
                     </div>
                     <div class="contact-submit">
                         <div class="contact-button">
-                            <a href="#">Submit</a>
+                            <input type="submit" value="Submit" class="btn-primary">
                         </div>
-                        <!-- <input type="submit" value="" class="btn-primary"> -->
                     </div>
                 </form>
             </div>
