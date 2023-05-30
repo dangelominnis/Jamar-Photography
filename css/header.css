@@ -1,0 +1,305 @@
+/* Bar */
+.bar {
+    position: static;
+    z-index: 50000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--bar-height);
+    /* box-shadow: 0 0 1rem rgba(97, 97, 97, 0.1); */
+    transition: ease-in-out .15s all;
+    background: rgb(238, 238, 238);
+    background-image: url(/img/noise.png);
+    /* padding: 0 1rem; */
+    /* margin: 4rem; */
+    margin-top: 4rem;
+}
+
+.bar--bg {
+    background: rgb(238, 238, 238);
+    background-image: url(/img/noise.png);
+}
+
+.bar__content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar__logo {
+    height: 1.75rem;
+    /* width: auto; */
+    /* height: 100%; */
+    margin-left: 8rem;
+}
+
+.bar__nav-toggle {
+    cursor: pointer;
+}
+
+.bar__nav-toggle i {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: var(--color-black); */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-right: 8rem;
+    transition: 1s ease-in-out all;
+}
+
+.bar__nav-toggle i:hover {
+    transform: rotate(180deg);
+}
+
+/* Nav */
+#inpNavToggle {
+    display: none;
+}
+
+#inpNavToggle:checked ~ .nav {
+    display: flex;
+}
+
+.nav{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: var(--bar-height);
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    /* height: calc(100vh - var(--bar-height)); */
+    padding: 24px;
+    background-image: url(/img/noise.png);
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 4000;
+}
+
+.nav__link {
+    color: var(--color-black);
+    font-size: 6rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    line-height: 1.6;
+    text-decoration: none;
+    padding: 1rem 0;
+    transition: .3s ease-in-out all;
+    text-transform: uppercase;
+}
+
+.nav__link:hover {
+    color: var(--color-orange);
+}
+
+.nav__link a:active {
+    color: var(--color-orange);
+}
+
+.nav .btn-black {
+    margin-right: 1rem;
+    padding: .75rem 1.5rem;
+
+}
+
+.nav__i i {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 1.5rem;
+}
+
+.nav__i a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+@media screen and (min-width: 3000px) {
+    .bar__nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: initial;
+        position: static;
+        width: unset;
+        height: unset;
+        padding: unset;
+        background: transparent;
+    }
+
+    .nav__link {
+        border-bottom: none;
+    }
+
+    .nav__link:not(:last-of-type) {
+        margin-right: 2rem;
+    }
+}
+
+/* @media only screen and (max-width: 992px) {
+    .nav__link {
+        font-size: 6rem;
+    }
+} */
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/girl1.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 4rem 6rem 0rem 6rem;
+}
+
+.header2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/Dallas-2.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 4rem 6rem 0rem 6rem;
+}
+
+.header3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/Nessa.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 4rem 6rem 0rem 6rem;
+}
+
+.header4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/Cassie.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 4rem 6rem 0rem 6rem;
+}
+
+.header-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-box h1 {
+    color: var(--color-black);
+    font-size: 12rem;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.header-box h1 span {
+    font-family: 'ivypresto-headline', serif;
+    font-style: italic;
+    font-weight: 200;
+    text-transform: none;
+}
+
+/* Extra small devices (phones, 820px and down) */
+@media only screen and (max-width: 820px) {
+
+    .bar__logo {
+        margin-left: 6rem;
+    }
+
+    .bar__nav-toggle i {
+        margin-right: 6rem;
+    }
+
+    .header {
+        min-height: 70vh;
+    }
+
+    .header2 {
+        min-height: 70vh;
+    }
+
+    .header3 {
+        min-height: 70vh;
+    }
+
+    .header4 {
+        min-height: 70vh;
+    }
+
+}
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    
+
+}
+
+/* Extra small devices (phones, 448px and down) */
+@media only screen and (max-width: 448px) {
+
+    .bar__logo {
+        margin-left: 2rem;
+        height: 1.5rem;
+    }
+
+    .bar__nav-toggle i {
+        margin-right: 2rem;
+        font-size: 3.5rem;
+    }
+
+    .nav__link {
+        font-size: 4rem;
+    }
+
+    .header {
+        min-height: 80vh;
+        margin: 4rem 2rem 0 2rem;
+    }
+
+    .header2 {
+        min-height: 80vh;
+        margin: 4rem 2rem 0 2rem;
+    }
+
+    .header3 {
+        min-height: 80vh;
+        margin: 4rem 2rem 0 2rem;
+    }
+
+    .header4 {
+        min-height: 80vh;
+        margin: 4rem 2rem 0 2rem;
+    }
+
+}

@@ -1,0 +1,191 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-white);
+}
+
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+    padding: 0 8rem;
+    overflow: hidden;
+}
+
+/* Root Variables */
+:root {
+    --bar-height: 75px;
+    --color-white: #f9f9f9;
+    --color-black: #131312;
+    --color-grey: #525252;
+    --color-light-grey: #f9f9f9;
+    --color-orange: #ffa514;
+}
+
+/* bg color change */
+.section {
+      height: auto;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+}
+
+.white {
+    background-color: var(--color-white);
+}
+
+.black {
+    background-color: var(--color-black);
+}
+
+.active {
+    opacity: 1;
+}
+
+/* Noise */
+.noise {
+    background: rgb(238, 238, 238);
+    background-image: url(/img/noise.png);
+}
+
+/* parallax */
+.parallax1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/Jasmine-3.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 8rem 6rem 16rem 6rem;
+}
+
+/* parallax */
+.parallax2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/Dallas-2.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 8rem 6rem 16rem 6rem;
+}
+
+/* parallax */
+.parallax3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/Dallas-2.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 8rem 6rem 16rem 6rem;
+}
+
+/* parallax */
+.parallax4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/Dallas-2.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 8rem 6rem 16rem 6rem;
+}
+
+/* parallax */
+.parallax5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/img/Dallas-2.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 8rem 6rem 16rem 6rem;
+}
+
+/* Extra small devices (phones, 820px and down) */
+@media only screen and (max-width: 820px) {
+
+    .container {
+        padding: 0 6rem;
+    }
+
+    .header {
+        min-height: 70vh;
+        margin: 0rem 8rem 0rem 0rem;
+    }
+
+    .header2 {
+        min-height: 50vh;
+    }
+
+    .header3 {
+        min-height: 50vh;
+    }
+
+    .header4 {
+        min-height: 50vh;
+    }
+
+    .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
+        min-height: 40vh;
+    }
+
+    
+
+
+
+}
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+    
+    .container {
+        padding: 0 4rem;
+    }
+
+}
+
+/* Extra small devices (phones, 448px and down) */
+@media only screen and (max-width: 448px) {
+
+    .container {
+        padding: 0 2rem;
+    }
+
+    .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
+        min-height: 40vh;
+        margin: 4rem 2rem 12rem 2rem;
+    }
+
+
+
+}

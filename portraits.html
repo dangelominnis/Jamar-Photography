@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>j photo</title>
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <!-- Javascript -->
+    <script defer src="https://kit.fontawesome.com/9e9c4f56c0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/animations.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Remixicon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body class="noise">
+
+    <!-- Bar -->
+    <div class="bar">
+        <div class="bar__content u-centered">
+            <a href="index.html"><img class="bar__logo" src="img/jb-photography-logo-02.png" alt="logo image"></a>
+            <input type="checkbox" id="inpNavToggle">
+            <label class="bar__nav-toggle" for="inpNavToggle">
+                <i class="ri-function-fill"></i>
+            </label>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Home</a>
+                <a class="nav__link" href="gallery.html">Gallery</a>
+                <a class="nav__link" href="portraits.html">Portraits</a>
+                <a class="nav__link" href="about.html">About</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <section class="header3">
+        <div class="container">
+            <!-- <div class="header-box">
+                <a href="#" class="btn-white">Explore Now</a>
+            </div> -->
+        </div>
+    </section>
+
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(entries => {
+            document.querySelector(".bar").classList.toggle("bar--bg", entries[0].intersectionRatio < 1)
+        }, {
+            threshold: 1
+        });
+        
+        observer.observe(document.querySelector(".header"));
+    });
+    </script>
+
+    <!-- Feature -->
+    <section class="feature">
+        <div class="container">
+            <h2>Portraits</h2>
+            <div class="feature-container">
+                <div class="feature-box2">
+                    <img src="img/Shenitta.jpeg" alt="">
+                </div>
+                <div class="feature-box1">
+                    <img src="img/Jasmine-1.jpeg" alt="">
+                    <p>"Absolutely amazing. I love how you’re capable of capturing all of the beauty in your subjects, it's truly breathtaking." - Precious</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <section class="parallax"></section>
+
+    <!-- Feature Reversed -->
+    <section class="feature">
+        <div class="container">
+            <div class="feature-container">
+                <div class="feature-box1">
+                    <img src="img/girl2.jpeg" alt="">
+                    <p>You have a eye for detail, you are very creative, and you bring to life what ever you envisioned.cYou are very talented. One of the best around." - Lauren</p>
+                </div>
+                <div class="feature-box2">
+                    <img src="img/infinity1.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature -->
+    <section class="feature">
+        <div class="container">
+            <div class="feature-container">
+                <div class="feature-box2">
+                    <img src="img/Dallas-4.jpeg" alt="">
+                </div>
+                <div class="feature-box1">
+                    <img src="img/Dallas-2.jpeg" alt="">
+                    <p>"J’s photography is breathtaking, warm, graceful, story-telling. I mean every capture you see the models story through color, composition & his lens." - Yanory</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- parallax -->
+    <section class="parallax1"></section>
+
+      <!-- Banner -->
+      <section class="banner background-color-change">
+        <div class="container">
+            <div class="content">
+                <h2>Let's <span>shoot</span> <br> a memory together</h2>
+            </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-info">
+                    <div class="footer-info-link">
+                        <h3>jay booker</h3>
+                    </div>
+                    <div class="footer-info-link">
+                        <a href="tel:+4697201115">469.720.1115</a>
+                    </div>
+                    <div class="footer-info-link">
+                        <a href="mailto:jbookerphotography92@gmail.com">jbookerphotography92@gmail.com</a>
+                    </div>
+                </div>
+                <div class="footer-socials">
+                    <div class="socials-link">
+                        <a href=""><i class="ri-instagram-line"></i></a>
+                    </div>
+                    <div class="socials-link">
+                        <a href=""><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="copyright">
+                <div class="copyright-box">
+                    <div class="copyright-textbox">
+                        <h4>&#169; Jay Booker Photography 2023 | Designed and developed by <a href="https://dangelominnis.com">D'Angelo Minnis</a> | All Rights Reserved.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="scroll-top-button">
+        <i class="ri-arrow-up-circle-fill"></i>
+    </a>
+
+</body>
+</html>
